@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#2c3e50;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial,sans-serif;
+}
+
+.game{
+    width:400px;
+    height:700px;
+    position:relative;
+}
+
+.score{
+    position:absolute;
+    top:10px;
+    left:10px;
+    z-index:100;
+    color:#fff;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.road{
+    width:300px;
+    height:700px;
+    margin:auto;
+    background:#444;
+    position:relative;
+    overflow:hidden;
+    border-left:10px solid green;
+    border-right:10px solid green;
+}
+
+.line{
+    width:10px;
+    height:100px;
+    background:white;
+    position:absolute;
+    left:145px;
+}
+
+.line1{top:-100px;}
+.line2{top:50px;}
+.line3{top:200px;}
+.line4{top:350px;}
+.line5{top:500px;}
+
+   .car{
+    width:60px;
+    height:110px;
+    position:absolute;
+    bottom:20px;
+    left:125px;
+    background:url("images/scorpio.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+
+.car::before,
+.enemy::before{
+    content:"";
+    position:absolute;
+    width:35px;
+    height:45px;
+    background:#87CEEB;
+    left:7px;
+    top:10px;
+    border-radius:5px;
+}
+
+.enemy{
+    width:60px;
+    height:110px;
+    position:absolute;
+    top:-120px;
+    background:url("images/infiniti.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+#enemy1{
+    left:50px;
+}
+
+#enemy2{
+    left:200px;
+}
